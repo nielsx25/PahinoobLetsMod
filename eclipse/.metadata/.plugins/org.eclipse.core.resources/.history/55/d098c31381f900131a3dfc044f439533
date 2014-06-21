@@ -1,0 +1,8 @@
+package com.nielsx25.letsmod;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "letsmod", name = "Let's mod reboot", version = "1.7.2-0.1")
+public class LetsMod {
+
+}
