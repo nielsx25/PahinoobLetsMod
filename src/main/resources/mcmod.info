@@ -1,0 +1,17 @@
+[
+{
+  "modid": "letsMod",
+  "name": "Let's Mod Reboot",
+  "description": "A mod made for Pahimar's let's mod series.",
+  "version": "0.1",
+  "mcversion": "1.7.2",
+  "logoFile": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["nielsx25"],
+  "credits": "Pahimar",
+  "parent": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
