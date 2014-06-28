@@ -1,21 +1,24 @@
 package com.nielsx25.letsmod;
 
-import net.minecraft.block.*;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
+import com.nielsx25.letsmod.proxy.IProxy;
+import com.nielsx25.letsmod.reference.*;
+
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.*;
-import cpw.mods.fml.common.registry.GameRegistry;
 
 
-@Mod(modid = "letsMod", name = "Let's Mod Reboot", version = "1.7.2-0.1")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
 public class LetsMod {
 	@Mod.Instance("LetsMod")
 	public static LetsMod instance;
 	
+	@SidedProxy(clientSide = "com.nielsx25.letsmod.proxy.ClientProxy", serverSide = "com.nielsx25.letsmod.proxy.ServerProxy")
+	public static IProxy proxy;
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
-			
+		
 	}
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
